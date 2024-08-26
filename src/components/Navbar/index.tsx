@@ -8,7 +8,7 @@ export default function NavBar() {
 			<S.Nav>
 				<Utility.DesktopOnly>
 					<S.UlMaster>
-						<Image src={Logo} alt="Logo Trellenilton" width={200} height={80} />
+						<Utility.Image src={Logo} alt="Logo Trellenilton" width={200} />
 						<li>
 							<a href="/">Home</a>
 						</li>
@@ -30,3 +30,4 @@ export default function NavBar() {
 		</S.Container>
 	);
 }
+1;
