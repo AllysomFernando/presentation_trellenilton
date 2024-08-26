@@ -17,7 +17,7 @@ export const Utility = {
 	`,
 	DesktopOnly: styled.div`
 		display: none;
-		
+
 		@media (width >= ${theme.device.lg}) {
 			display: initial;
 		}
@@ -64,5 +64,14 @@ export const Utility = {
 	Image: styled(Image)`
 		max-width: 100%;
 		display: inline-block;
+	`,
+	ContainerMobile: styled.div`
+		--max-width: 680px;
+		width: min(var(--max-width), 100% - var(--px-lg) * 2);
+		margin-inline: auto;
+		display: flex;
+		@media (width >= ${theme.device.lg}) {
+			--max-width: 1050px;
+		}
 	`,
 };
