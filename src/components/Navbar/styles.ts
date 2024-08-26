@@ -18,6 +18,6 @@ export const S = {
 	`,
 	UlMaster: styled.ul`
 		display: flex;
-		gap: ${theme.responsive.gap.base};
+		gap: ${theme.responsive.gap.lg};
 	`,
 };
