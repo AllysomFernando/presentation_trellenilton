@@ -24,6 +24,11 @@ export const Utility = {
 	EvenColumns: styled.div`
 		display: grid;
 		gap: ${theme.responsive.gap.base};
+
+		@media (width >= ${theme.device.lg}) {
+			grid-auto-flow: column;
+			grid-auto-columns: 1fr;
+		}
 	`,
 	ItemCenter: styled.div`
 		align-items: center;
@@ -52,7 +57,7 @@ export const Utility = {
 		width: min(var(--max-width), 100% - var(--px-lg) * 2);
 		margin-inline: auto;
 
-		@media (width >= 1280px) {
+		@media (width >= ${theme.device.lg}) {
 			--max-width: 1050px;
 		}
 	`,
