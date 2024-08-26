@@ -1,14 +1,14 @@
 "use client";
 
-import NavBar from "@/components/Navbar";
 import React from "react";
 import { styles } from "./styles";
+import Header from "@/components/Header";
 
 export default function HomeTemplate() {
 	return (
 		<styles.Container>
 			<styles.Main>
-				<NavBar />
+				<Header />
 			</styles.Main>
 		</styles.Container>
 	);
