@@ -1,16 +1,17 @@
+// src/styles/theme.ts
 export const theme = {
 	main: {
 		colors: {
 			primary: "#23A6F0",
-			secondary: " #B2E3FF",
-			ligthGray: "#F8F8F8",
-			ligthTextColor: "#737373",
+			secondary: "#B2E3FF",
+			lightGray: "#F8F8F8",
+			lightTextColor: "#737373",
 			textColor: "#252B42",
 			backgroundColor: "#FFF",
 		},
 		font: {
 			family: {
-				primary: "Montserrat sytem-ui, sans-serif",
+				primary: "Montserrat, system-ui, sans-serif",
 			},
 			weight: {
 				base: 400,
@@ -25,11 +26,12 @@ export const theme = {
 				xxl: "2.5rem",
 			},
 		},
-		padding: {
+		spacing: {
 			y: {
 				sm: "0.5rem",
 				base: "1rem",
 				lg: "1.5rem",
+				xl: "3rem",
 			},
 			x: {
 				lg: "1.5rem",
