@@ -1,18 +1,23 @@
 import { IconsNames, useIcon } from "@/hooks/useIcon";
-import { SVGProps } from "react";
+import Image from "next/image";
+import { ImgHTMLAttributes } from "react";
 
-interface IconProps extends SVGProps<SVGSVGElement> {
+interface IconProps extends ImgHTMLAttributes<HTMLImageElement> {
 	name: IconsNames;
+	width?: number;
+	height?: number;
 }
 
-export const Icon = ({ name, ...rest }: IconProps) => {
+export const Icon = ({ name, width, height, ...rest }: IconProps) => {
 	const { getIconByKeyword } = useIcon();
+	const iconSrc = getIconByKeyword(name);
 
-	const SelectIcon = getIconByKeyword(name);
+	if (!iconSrc) {
+		console.error(`Icon '${name}' not found.`);
+		return null;
+	}
 
 	return (
-		<div>
-			<SelectIcon {...rest} />
-		</div>
+		<Image src={iconSrc} alt={name} width={width} height={height} {...rest} />
 	);
 };
