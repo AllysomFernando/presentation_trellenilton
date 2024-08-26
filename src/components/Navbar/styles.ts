@@ -45,7 +45,7 @@ export const S = {
 		align-items: center;
 		justify-content: space-between;
 		padding: 1rem;
-		gap: 3rem;
+		width: 100%;
 	`,
 	MenuMobileContent: styled.div`
 		position: absolute;
