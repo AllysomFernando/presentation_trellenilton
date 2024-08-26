@@ -1,6 +1,4 @@
-import Profile from "@/icons/menu-usuario.svg";
-import { profile } from "console";
-
+import Profile from "@/assets/icons/menu-usuario.svg";
 import { SVGProps } from "react";
 
 export type IconsNames = keyof typeof icons;
