@@ -1,5 +1,4 @@
 import { theme } from "@/styles/theme";
-import { Utility } from "@/styles/utility";
 import styled from "styled-components";
 
 export const S = {
