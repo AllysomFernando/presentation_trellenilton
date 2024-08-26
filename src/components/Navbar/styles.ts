@@ -14,7 +14,7 @@ export const S = {
 	Nav: styled.nav`
 		display: flex;
 		align-items: center;
-		gap: ${theme.responsive.gap.base};
+		gap: ${theme.responsive.gap.lg};
 		justify-content: space-between;
 	`,
 	UlMaster: styled.ul`
@@ -25,5 +25,6 @@ export const S = {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		gap: ${theme.responsive.gap.lg};
 	`,
 };
