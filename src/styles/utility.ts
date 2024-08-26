@@ -17,7 +17,7 @@ export const Utility = {
 	`,
 	DesktopOnly: styled.div`
 		display: none;
-
+		
 		@media (width >= ${theme.device.lg}) {
 			display: initial;
 		}
