@@ -1,16 +1,16 @@
 export const theme = {
 	main: {
 		colors: {
-			primary: "#23A6F0",
-			secondary: "#B2E3FF",
+			primary: "#7432E0",
+			secondary: "#1F1E21",
 			lightGray: "#F8F8F8",
 			lightTextColor: "#737373",
 			textColor: "#252B42",
-			backgroundColor: "#FFF",
+			backgroundColor: "#F7FCFD",
 		},
 		font: {
 			family: {
-				primary: "Montserrat, system-ui, sans-serif",
+				primary: "Inter, sans-serif",
 			},
 			weight: {
 				base: 400,
