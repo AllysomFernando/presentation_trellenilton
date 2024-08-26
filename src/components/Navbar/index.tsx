@@ -29,9 +29,11 @@ export default function NavBar() {
 						<li>
 							<a href="/">Contato</a>
 						</li>
-						<Button onPress={handlePress} title="Login" variant="Main" />
 					</S.UlMaster>
 				</Utility.DesktopOnly>
+				<S.ButtonContainer>
+					<Button onPress={handlePress} title="Login" variant="Main" />
+				</S.ButtonContainer>
 			</S.Nav>
 		</S.Container>
 	);
