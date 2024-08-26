@@ -17,7 +17,7 @@ export const S = {
 		flex-shrink: 1;
 		border: none;
 		font-family: ${theme.main.font.family.primary};
-		font-weight: ${theme.main.font.weight.base};
+		font-weight: ${theme.main.font.weight.semiBold};
 	`,
 	Outline: styled.button`
 		display: flex;
