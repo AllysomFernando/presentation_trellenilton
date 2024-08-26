@@ -1,4 +1,3 @@
-import { Utility } from "@/styles/utility";
 import NavBar from "../Navbar";
 import { styles } from "./styles";
 export default function Header() {
