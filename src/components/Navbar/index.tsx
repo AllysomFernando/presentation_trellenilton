@@ -1,7 +1,6 @@
 import { Utility } from "@/styles/utility";
 import { S } from "./styles";
 import Logo from "@/assets/logo.svg";
-import Image from "next/image";
 import { Button } from "../Button";
 export default function NavBar() {
 	const handlePress = () => {
