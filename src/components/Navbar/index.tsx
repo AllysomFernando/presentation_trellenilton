@@ -1,9 +1,11 @@
-import React from "react";
-
-export default function Navbar() {
+export default function NavBar () {
 	return (
-		<div>
-			<h1>Navbar</h1>
-		</div>
+	  <nav>
+		<ul>
+		  <li>Home</li>
+		  <li>About</li>
+		  <li>Contact</li>
+		</ul>
+	  </nav>
 	);
-}
+  }
