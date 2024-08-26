@@ -55,4 +55,7 @@ export const theme = {
 			lg: "2rem",
 		},
 	},
+	device: {
+		lg: "1280px",
+	},
 };
