@@ -52,6 +52,7 @@ export const theme = {
 			xl: "5rem",
 		},
 		gap: {
+			base: "1rem",
 			lg: "2rem",
 		},
 	},
