@@ -40,6 +40,13 @@ export const S = {
 			display: none;
 		}
 	`,
+	MenuContainerLogo: styled.div`
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem;
+		gap: 3rem;
+	`,
 	MenuMobileContent: styled.div`
 		position: absolute;
 		display: flex;
@@ -57,14 +64,15 @@ export const S = {
 			align-items: center;
 			justify-content: center;
 			gap: 4rem;
+			height: 50%;
 		}
 
 		a {
-			font-size: var(--fs-lg);
+			font-size: ${theme.main.font.size.lg};
+			color: ${colors.white[900]};
 		}
 		@media (width > ${theme.device.lg}) {
 			display: none;
 		}
 	`,
-	
 };
