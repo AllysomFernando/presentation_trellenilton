@@ -66,9 +66,12 @@ export default function NavBar() {
 						</S.MenuMobileContent>
 					</S.MenuMobileContainer>
 				) : (
-					<Utility.BtnWrapper onClick={() => setMobile(!mobile)}>
-						<Icon name="menu" width={35} height={35} />
-					</Utility.BtnWrapper>
+					<S.MenuContainerLogo>
+						<Utility.Image src={Logo} alt="Logo Trellenilton" width={200} />
+						<Utility.BtnWrapper onClick={() => setMobile(!mobile)}>
+							<Icon name="menu" width={35} height={35} />
+						</Utility.BtnWrapper>
+					</S.MenuContainerLogo>
 				)}
 			</S.MenuMobileContainer>
 		</S.Container>
