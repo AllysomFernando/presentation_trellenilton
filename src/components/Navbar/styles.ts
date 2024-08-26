@@ -16,6 +16,9 @@ export const S = {
 		align-items: center;
 		gap: ${theme.responsive.gap.lg};
 		justify-content: space-between;
+		@media (width < ${theme.device.lg}) {
+			display: none;
+		}
 	`,
 	UlMaster: styled.ul`
 		display: flex;
