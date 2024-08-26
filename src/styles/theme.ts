@@ -14,7 +14,7 @@ export const theme = {
 			},
 			weight: {
 				base: 400,
-				md: 500,
+				md: 600,
 				bold: 800,
 			},
 			size: {

@@ -15,6 +15,9 @@ export const S = {
 		border-radius: 5px;
 		padding: 12px 16px;
 		flex-shrink: 1;
+		border: none;
+		font-family: ${theme.main.font.family.primary};
+		font-weight: ${theme.main.font.weight.base};
 	`,
 	Outline: styled.button`
 		display: flex;

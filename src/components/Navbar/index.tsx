@@ -2,7 +2,12 @@ import { Utility } from "@/styles/utility";
 import { S } from "./styles";
 import Logo from "@/assets/logo.svg";
 import Image from "next/image";
+import { Button } from "../Button";
 export default function NavBar() {
+	const handlePress = () => {
+		console.log("Button pressed");
+	};
+
 	return (
 		<S.Container>
 			<S.Nav>
@@ -24,6 +29,7 @@ export default function NavBar() {
 						<li>
 							<a href="/">Contato</a>
 						</li>
+						<Button onPress={handlePress} title="Login" variant="Main" />
 					</S.UlMaster>
 				</Utility.DesktopOnly>
 			</S.Nav>

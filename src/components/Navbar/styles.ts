@@ -20,4 +20,8 @@ export const S = {
 		display: flex;
 		gap: ${theme.responsive.gap.lg};
 	`,
+	ButtonContainer: styled.div`
+		display: flex;
+		align-items: center;
+	`,
 };
