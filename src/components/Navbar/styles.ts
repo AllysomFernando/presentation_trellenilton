@@ -10,6 +10,9 @@ export const S = {
 		--max-width: 680px;
 		width: min(var(--max-width), 100% - var(--px-lg) * 2);
 		margin-inline: auto;
+		@media (width >= ${theme.device.lg}) {
+			--max-width: 1050px;
+		}
 	`,
 	Nav: styled.nav`
 		display: flex;
@@ -30,4 +33,38 @@ export const S = {
 		justify-content: center;
 		gap: ${theme.responsive.gap.lg};
 	`,
+	MenuMobileContainer: styled.div`
+		display: initial;
+		z-index: 3;
+		@media (width > ${theme.device.lg}) {
+			display: none;
+		}
+	`,
+	MenuMobileContent: styled.div`
+		position: absolute;
+		display: flex;
+		top: 0;
+		left: 0;
+		padding-top: 2.25rem;
+		width: 100vw;
+		height: 100vh;
+		background: ${theme.main.colors.secondary};
+
+		ul {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 4rem;
+		}
+
+		a {
+			font-size: var(--fs-lg);
+		}
+		@media (width > ${theme.device.lg}) {
+			display: none;
+		}
+	`,
+	
 };
