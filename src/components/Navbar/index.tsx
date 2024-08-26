@@ -31,6 +31,7 @@ export default function NavBar() {
 				</Utility.DesktopOnly>
 				<S.ButtonContainer>
 					<Button onPress={handlePress} title="Login" variant="Main" />
+					<Button onPress={handlePress} title="Cadastrar" variant="Outline" />
 				</S.ButtonContainer>
 			</S.Nav>
 		</S.Container>
