@@ -38,13 +38,12 @@ export const Utility = {
 	`,
 	Flex: styled.div`
 		display: flex;
+		gap: ${theme.responsive.gap.base};
 	`,
 	Grid: styled.div`
 		display: grid;
 	`,
-	Gap1: styled.div`
-		gap: ${theme.responsive.gap.base};
-	`,
+	Gap1: styled.div``,
 	GapOneHalf: styled.div`
 		gap: 1.5rem;
 	`,
@@ -52,7 +51,7 @@ export const Utility = {
 		cursor: pointer;
 		padding: 2px;
 	`,
-	Container: styled.div`
+	Container: styled.header`
 		--max-width: 680px;
 		width: min(var(--max-width), 100% - var(--px-lg) * 2);
 		margin-inline: auto;
