@@ -60,7 +60,16 @@ export default function NavBar() {
 									</li>
 								</ul>
 								<Utility.BtnWrapper onClick={() => setMobile(!mobile)}>
-									<Icon name="close" width={35} height={35} />
+									<Icon
+										name="close"
+										width={35}
+										height={35}
+										style={{
+											position: "absolute",
+											top: "2.3rem",
+											right: "5rem",
+										}}
+									/>
 								</Utility.BtnWrapper>
 							</Utility.ContainerMobile>
 						</S.MenuMobileContent>
