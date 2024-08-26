@@ -33,10 +33,10 @@ export const S = {
 		justify-content: center;
 		align-items: center;
 		border-color: ${({ disabled }) =>
-			disabled ? colors.grafiti[300] : colors.purple[700]};
+			disabled ? colors.grafiti[300] : colors.charcoal[600]};
 		border-width: 2px;
 		color: ${({ disabled }) =>
-			disabled ? colors.grafiti[300] : colors.purple[500]};
+			disabled ? colors.grafiti[300] : colors.charcoal[900]};
 		width: 100%;
 		border-radius: 5px;
 		padding: 12px 16px;
@@ -44,11 +44,14 @@ export const S = {
 		border-style: solid;
 		transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 		outline: none;
+		background-color: ${({ disabled }) =>
+			disabled ? colors.grafiti[300] : theme.main.colors.backgroundColor};
+		font-weight: ${theme.main.font.weight.semiBold};
 
 		&:hover {
-			color: ${colors.charcoal[900]};
-			background-color: ${colors.white[900]};
-			border-color: ${colors.charcoal[900]};
+			color: ${colors.purple[900]};
+			background-color: ${theme.main.colors.backgroundColor};
+			border-color: ${colors.purple[900]};
 			transform: scale(1.05);
 		}
 	`,
