@@ -6,7 +6,6 @@ export default function NavBar() {
 	const handlePress = () => {
 		console.log("Button pressed");
 	};
-
 	return (
 		<S.Container>
 			<S.Nav>
