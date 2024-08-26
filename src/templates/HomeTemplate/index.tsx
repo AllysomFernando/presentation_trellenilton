@@ -1,15 +1,15 @@
 "use client";
 
 import React from "react";
-import { styles } from "./styles";
+import { S } from "./styles";
 import Header from "@/components/Header";
 
 export default function HomeTemplate() {
 	return (
-		<styles.Container>
-			<styles.Main>
+		<S.Container>
+			<S.Main>
 				<Header />
-			</styles.Main>
-		</styles.Container>
+			</S.Main>
+		</S.Container>
 	);
 }
