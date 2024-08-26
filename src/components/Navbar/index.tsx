@@ -26,6 +26,7 @@ export default function NavBar() {
 					</S.UlMaster>
 				</Utility.DesktopOnly>
 			</S.Nav>
+			
 		</S.Container>
 	);
 }
