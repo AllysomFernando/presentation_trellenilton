@@ -18,6 +18,11 @@ export const S = {
 		border: none;
 		font-family: ${theme.main.font.family.primary};
 		font-weight: ${theme.main.font.weight.semiBold};
+
+		&:hover {
+			color: ${colors.white[900]};
+			background-color: ${colors.charcoal[900]};
+		}
 	`,
 	Outline: styled.button`
 		display: flex;
@@ -33,6 +38,12 @@ export const S = {
 		padding: 12px 16px;
 		flex-shrink: 1;
 		border-style: solid;
+
+		&:hover {
+			color: ${colors.charcoal[900]};
+			background-color: ${colors.white[900]};
+			border-color: ${colors.charcoal[900]};
+		}
 	`,
 	Danger: styled.button`
 		display: flex;
@@ -43,6 +54,10 @@ export const S = {
 		width: auto;
 		border-radius: 5px;
 		padding: 12px 16px;
+
+		&:hover {
+			background-color: darkred;
+		}
 	`,
 	Text: styled.span`
 		font-size: ${theme.main.font.size.base};
@@ -57,5 +72,8 @@ export const S = {
 		width: 100%;
 		padding: 4px;
 		flex-shrink: 1;
+		&:hover {
+			color: ${colors.purple[100]};
+		}
 	`,
 };
