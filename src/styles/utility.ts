@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { theme } from "./theme";
+import Image from "next/image";
 
 export const Utility = {
 	PyBase: styled.div`
@@ -59,5 +60,9 @@ export const Utility = {
 		@media (width >= ${theme.device.lg}) {
 			--max-width: 1050px;
 		}
+	`,
+	Image: styled(Image)`
+		max-width: 100%;
+		display: inline-block;
 	`,
 };
