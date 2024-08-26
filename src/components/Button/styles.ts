@@ -20,7 +20,7 @@ export const S = {
 		font-weight: ${theme.main.font.weight.semiBold};
 		transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 		outline: none;
-
+		height: 48px;
 		&:hover {
 			color: ${colors.white[900]};
 			background-color: ${colors.charcoal[900]};
@@ -47,6 +47,7 @@ export const S = {
 		background-color: ${({ disabled }) =>
 			disabled ? colors.grafiti[300] : theme.main.colors.backgroundColor};
 		font-weight: ${theme.main.font.weight.semiBold};
+		height: 48px;
 
 		&:hover {
 			color: ${colors.purple[900]};
@@ -64,6 +65,7 @@ export const S = {
 		width: auto;
 		border-radius: 5px;
 		padding: 12px 16px;
+		height: 48px;
 
 		&:hover {
 			background-color: darkred;
@@ -83,6 +85,8 @@ export const S = {
 		width: 100%;
 		padding: 4px;
 		flex-shrink: 1;
+		height: 48px;
+
 		&:hover {
 			color: ${colors.purple[100]};
 			transform: scale(1.05);
