@@ -8,4 +8,4 @@ export interface ButtonProps {
 	icon?: IconsNames;
 }
 
-type ButtonVariants = "Main" | "Outline" | "Danger" | "Ghost" | "Home";
+export type ButtonVariants = "Main" | "Outline" | "Danger" | "Ghost" | "Home";
