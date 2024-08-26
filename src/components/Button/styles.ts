@@ -18,10 +18,14 @@ export const S = {
 		border: none;
 		font-family: ${theme.main.font.family.primary};
 		font-weight: ${theme.main.font.weight.semiBold};
+		transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+		outline: none;
 
 		&:hover {
 			color: ${colors.white[900]};
 			background-color: ${colors.charcoal[900]};
+			cursor: pointer;
+			transform: scale(1.05);
 		}
 	`,
 	Outline: styled.button`
@@ -38,11 +42,14 @@ export const S = {
 		padding: 12px 16px;
 		flex-shrink: 1;
 		border-style: solid;
+		transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+		outline: none;
 
 		&:hover {
 			color: ${colors.charcoal[900]};
 			background-color: ${colors.white[900]};
 			border-color: ${colors.charcoal[900]};
+			transform: scale(1.05);
 		}
 	`,
 	Danger: styled.button`
@@ -57,6 +64,7 @@ export const S = {
 
 		&:hover {
 			background-color: darkred;
+			transform: scale(1.05);
 		}
 	`,
 	Text: styled.span`
@@ -74,6 +82,7 @@ export const S = {
 		flex-shrink: 1;
 		&:hover {
 			color: ${colors.purple[100]};
+			transform: scale(1.05);
 		}
 	`,
 };
