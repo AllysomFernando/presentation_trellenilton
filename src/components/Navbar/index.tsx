@@ -30,8 +30,8 @@ export default function NavBar() {
 					</S.UlMaster>
 				</Utility.DesktopOnly>
 				<S.ButtonContainer>
-					<Button onPress={handlePress} title="Login" variant="Main" />
-					<Button onPress={handlePress} title="Cadastrar" variant="Outline" />
+					<Button onPress={handlePress} title="Login" variant="Outline" />
+					<Button onPress={handlePress} title="Cadastrar" variant="Main" />
 				</S.ButtonContainer>
 			</S.Nav>
 		</S.Container>
