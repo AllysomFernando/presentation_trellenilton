@@ -1,11 +1,11 @@
 import NavBar from "../Navbar";
-import { styles } from "./styles";
+import { S } from "./styles";
 export default function Header() {
 	return (
-		<styles.Container>
-			<styles.Main>
+		<S.Container>
+			<S.Main>
 				<NavBar />
-			</styles.Main>
-		</styles.Container>
+			</S.Main>
+		</S.Container>
 	);
 }
