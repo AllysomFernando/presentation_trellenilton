@@ -22,6 +22,20 @@ export const Utility = {
 			display: initial;
 		}
 	`,
+	DesktopOnlySpan: styled.span`
+		display: none;
+
+		@media (width >= ${theme.device.lg}) {
+			display: initial;
+		}
+	`,
+	DesktopOnlyP: styled.p`
+	display: none;
+
+	@media (width >= ${theme.device.lg}) {
+		display: initial;
+	}
+`,
 	EvenColumns: styled.div`
 		display: grid;
 		gap: ${theme.responsive.gap.base};
@@ -73,5 +87,18 @@ export const Utility = {
 		@media (width >= ${theme.device.lg}) {
 			--max-width: 1050px;
 		}
+	`,
+	ContainerContent: styled.div`
+		--max-width: 680px;
+		width: min(var(--max-width), 100% - var(--px-lg) * 2);
+		margin-inline: auto;
+		gap: 2.5rem;
+		@media (width >= ${theme.device.lg}) {
+			--max-width: 1050px;
+		}
+	`,
+	FlexGap: styled.div`
+		display: flex;
+		gap: 1rem;
 	`,
 };
