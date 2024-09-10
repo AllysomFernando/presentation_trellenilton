@@ -48,6 +48,7 @@ export const S = {
 		color: gray;
 		font-size: 1em;
 		margin-bottom: 15px;
+		font-weight: ${({ theme }) => theme.main.font.weight.md};
 	`,
 	ExpandedCard: styled(motion.div)`
 		background-color: ${({ theme }) => theme.main.colors.backgroundColor};
@@ -57,6 +58,7 @@ export const S = {
 		width: 40%;
 		max-width: 800px;
 		margin: 0 auto;
+		font-weight: ${({ theme }) => theme.main.font.weight.md};
 	`,
 	CloseButton: styled(motion.button)`
 		padding: 10px 20px;
