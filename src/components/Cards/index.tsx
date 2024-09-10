@@ -6,6 +6,7 @@ type CardProps = {
 	id: number;
 	title: string;
 	subtitle: string;
+	text: string;
 	img: string;
 };
 
@@ -53,10 +54,10 @@ export default function Cards({ items }: CardListProps) {
 								{items.find((item) => item.id === selectedId)?.title}
 							</S.CardTitle>
 							<S.CardSubtitle layoutId={`subtitle-${selectedId}`}>
-								{items.find((item) => item.id === selectedId)?.subtitle}
+								{items.find((item) => item.id === selectedId)?.text}
 							</S.CardSubtitle>
 							<S.CloseButton onClick={() => setSelectedId(null)}>
-								Close
+								Fechar
 							</S.CloseButton>
 						</S.ExpandedCard>
 					)}
