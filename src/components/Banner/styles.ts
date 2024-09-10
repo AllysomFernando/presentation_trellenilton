@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 export const S = {
@@ -18,24 +17,13 @@ export const S = {
 			margin: 0 auto;
 		}
 	`,
-	ImageContainer: styled.div`
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 0 auto;
-		margin-top: 10px;
-		max-height: 600px;
-	`,
-	Image: styled(Image)`
-		width: 100%;
-		height: 650px;
-		border-radius: 1%;
-	`,
 	TextAnimated: styled(motion.div)`
 		position: absolute;
 		color: ${({ theme }) => theme.main.colors.textColor};
 		font-size: 40px;
 		font-weight: bold;
+		max-width: 75%;
+		text-align: center;
 		@media (max-width: 768px) {
 			font-size: 19px;
 		}
