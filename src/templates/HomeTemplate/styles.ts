@@ -8,8 +8,10 @@ export const S = {
 		justify-content: center;
 	`,
 	Main: styled.div`
-		display: flex;
 		width: 100%;
+		max-width: 1440px;
+		padding: 0 ${theme.main.spacing.x.xl};
+		
 	`,
 	Header: styled.header``,
 };
