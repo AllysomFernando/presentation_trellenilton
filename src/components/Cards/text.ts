@@ -1,20 +1,24 @@
+
 export const TextCards = [
 	{
 		id: 1,
-		title: "Card 1",
-		subtitle: "This is the first card",
+		title: "Agilidade",
+		subtitle: "Agilidade no dia a dia",
+		text: "Aqui você encontra soluções para otimizar o seu tempo e aumentar a sua produtividade.",
 		img: "https://via.placeholder.com/400x200",
 	},
 	{
 		id: 2,
-		title: "Card 2",
-		subtitle: "This is the second card",
+		title: "Organização",
+		subtitle: "Organização é a chave",
+		text: "Aqui você encontra soluções para otimizar o seu tempo e aumentar a sua produtividade.",
 		img: "https://via.placeholder.com/400x200",
 	},
 	{
 		id: 3,
-		title: "Card 3",
-		subtitle: "This is the third card",
+		title: "Transparência",
+		subtitle: "Transparência é tudo",
+		text: "Na Trellenilton você encontra soluções para otimizar o seu tempo e aumentar a sua produtividade.",
 		img: "https://via.placeholder.com/400x200",
 	},
 ];
