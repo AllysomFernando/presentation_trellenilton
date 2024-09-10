@@ -1,13 +1,23 @@
 import styled from "styled-components";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 export const S = {
+	Container: styled.div`
+		width: 100%;
+		background-color: ${({ theme }) => theme.main.colors.backgroundColor};
+	`,
+	Main: styled.div`
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 30px;
+	`,
 	CardContainer: styled.div`
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-		gap: 20px;
-		padding: 20px;
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+		gap: 30px;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
 	`,
 	Card: styled(motion.div)`
 		background-color: ${({ theme }) => theme.main.colors.backgroundColor};
@@ -19,6 +29,10 @@ export const S = {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		height: 350px;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto;
 	`,
 	CardImage: styled(motion.img)`
 		width: 100%;
@@ -27,13 +41,13 @@ export const S = {
 		border-radius: 10px;
 	`,
 	CardTitle: styled(motion.h2)`
-		margin: 15px 0 5px;
+		margin: 30px 0 5px;
 		font-size: 1.5em;
 	`,
 	CardSubtitle: styled(motion.h5)`
 		color: gray;
 		font-size: 1em;
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 	`,
 	ExpandedCard: styled(motion.div)`
 		background-color: ${({ theme }) => theme.main.colors.backgroundColor};
@@ -41,7 +55,7 @@ export const S = {
 		padding: 20px;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		width: 100%;
-		max-width: 500px;
+		max-width: 800px;
 		margin: 0 auto;
 	`,
 	CloseButton: styled(motion.button)`
