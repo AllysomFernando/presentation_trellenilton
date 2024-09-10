@@ -54,7 +54,7 @@ export const S = {
 		border-radius: 10px;
 		padding: 20px;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		width: 100%;
+		width: 40%;
 		max-width: 800px;
 		margin: 0 auto;
 	`,
