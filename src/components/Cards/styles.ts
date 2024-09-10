@@ -60,7 +60,7 @@ export const S = {
 	`,
 	CloseButton: styled(motion.button)`
 		padding: 10px 20px;
-		background-color: #ff5252;
+		background-color: ${({ theme }) => theme.main.colors.primary};
 		color: ${({ theme }) => theme.main.colors.backgroundColor};
 		border: none;
 		border-radius: 5px;
