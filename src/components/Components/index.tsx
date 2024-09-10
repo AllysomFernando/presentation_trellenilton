@@ -7,18 +7,19 @@ export default function Section() {
 	const handleCadastro = () => {
 		console.log("cadastro");
 	};
+
 	return (
 		<section>
 			<S.Container>
 				<Utility.DesktopOnly>
 					<h1>Quem somos?</h1>
 					<p>
-						Somos uma equipe de desenvolvedores que enfrantavamos porblemas em
-						organizar as tarefas do dia dia, e os softwares de hoje não estava
-						de agrado nosso. Então decidimos criar o nosso próprio software de
+						Somos uma equipe de desenvolvedores que enfrentava problemas em
+						organizar as tarefas do dia a dia, e os softwares de hoje não nos
+						agradavam. Então decidimos criar o nosso próprio software de
 						organização de tarefas.
 					</p>
-					<S.ButtonConatiners>
+					<S.ButtonContainers>
 						<Button title="Começar" variant="Main" onPress={handleCadastro} />
 						<Utility.DesktopOnlySpan>
 							<Button
@@ -27,10 +28,10 @@ export default function Section() {
 								onPress={handleCadastro}
 							/>
 						</Utility.DesktopOnlySpan>
-					</S.ButtonConatiners>
+					</S.ButtonContainers>
 				</Utility.DesktopOnly>
 				<S.ImageContainer>
-					<S.Image src={DefaultHomeImage} alt="Imagem para acompanhar" />
+					<S.Image src={DefaultHomeImage} alt="Imagem ilustrativa" />
 				</S.ImageContainer>
 			</S.Container>
 		</section>
