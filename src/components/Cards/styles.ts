@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-
+import { colors } from "@/styles/colors";
 export const S = {
 	Container: styled.div`
 		width: 100%;
@@ -20,7 +20,7 @@ export const S = {
 		width: 100%;
 	`,
 	Card: styled(motion.div)`
-		background-color: ${({ theme }) => theme.main.colors.backgroundColor};
+		background-color: ${colors.white[800]};
 		border-radius: 10px;
 		padding: 20px;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -51,7 +51,7 @@ export const S = {
 		font-weight: ${({ theme }) => theme.main.font.weight.md};
 	`,
 	ExpandedCard: styled(motion.div)`
-		background-color: ${({ theme }) => theme.main.colors.backgroundColor};
+		background-color: ${colors.white[800]};
 		border-radius: 10px;
 		padding: 20px;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
