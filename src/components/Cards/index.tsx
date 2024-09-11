@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { S } from "./styles";
 import { AnimatePresence } from "framer-motion";
+import { StaticImageData } from "next/image";
 
 type CardProps = {
 	id: number;
 	title: string;
 	subtitle: string;
 	text: string;
-	img: string;
+	img: string | StaticImageData;
 };
 
 interface CardListProps {
@@ -28,7 +29,7 @@ export default function Cards({ items }: CardListProps) {
 							onClick={() => setSelectedId(item.id)}
 						>
 							<S.CardImage
-								src={item.img}
+								src={typeof item.img === "string" ? item.img : item.img.src}
 								alt={item.title}
 								layoutId={`image-${item.id}`}
 							/>
@@ -46,7 +47,16 @@ export default function Cards({ items }: CardListProps) {
 					{selectedId && (
 						<S.ExpandedCard layoutId={selectedId.toString()}>
 							<S.CardImage
-								src={items.find((item) => item.id === selectedId)?.img}
+								src={
+									typeof items.find((item) => item.id === selectedId)?.img ===
+									"string"
+										? (items.find((item) => item.id === selectedId)
+												?.img as string)
+										: (
+												items.find((item) => item.id === selectedId)
+													?.img as StaticImageData
+										  ).src
+								}
 								alt={items.find((item) => item.id === selectedId)?.title}
 								layoutId={`image-${selectedId}`}
 							/>
