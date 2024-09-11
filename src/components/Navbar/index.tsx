@@ -2,7 +2,7 @@ import { Utility } from "@/styles/utility";
 import { S } from "./styles";
 import Logo from "@/assets/logo.svg";
 import { Button } from "@/components/Button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Icon } from "@/components/Icon";
 import { motion } from "framer-motion";
 
@@ -31,6 +31,23 @@ export default function NavBar() {
 		},
 	};
 
+	useEffect(() => {
+		const body = document.body;
+		if (mobile) {
+			body.style.overflow = "hidden";
+			body.style.position = "fixed";
+			body.style.width = "100%";
+		} else {
+			body.style.overflow = "auto";
+			body.style.position = "static";
+		}
+
+		return () => {
+			body.style.overflow = "auto";
+			body.style.position = "static";
+		};
+	}, [mobile]);
+	
 	return (
 		<S.Container>
 			<S.Nav>
@@ -79,6 +96,7 @@ export default function NavBar() {
 						width: "100%",
 						height: "100vh",
 						backgroundColor: "white",
+						overflowY: "hidden",
 					}}
 				>
 					<S.MenuMobileContent>
