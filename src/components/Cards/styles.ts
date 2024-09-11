@@ -33,6 +33,11 @@ export const S = {
 		width: 100%;
 		max-width: 300px;
 		margin: 0 auto;
+
+		@media (max-width: 768px) {
+			height: 300px;
+			padding: 15px;
+		}
 	`,
 	CardImage: styled(motion.img)`
 		width: 100%;
@@ -43,12 +48,18 @@ export const S = {
 	CardTitle: styled(motion.h2)`
 		margin: 30px 0 5px;
 		font-size: 1.5em;
+		@media (max-width: 768px) {
+			font-size: 1.3em;
+		}
 	`,
 	CardSubtitle: styled(motion.h5)`
 		color: gray;
 		font-size: 1em;
 		margin-bottom: 15px;
 		font-weight: ${({ theme }) => theme.main.font.weight.md};
+		@media (max-width: 768px) {
+			font-size: 1em;
+		}
 	`,
 	ExpandedCard: styled(motion.div)`
 		background-color: ${colors.white[800]};
@@ -59,6 +70,10 @@ export const S = {
 		max-width: 800px;
 		margin: 0 auto;
 		font-weight: ${({ theme }) => theme.main.font.weight.md};
+		@media (max-width: 768px) {
+			width: 80%;
+			padding: 15px;
+		}
 	`,
 	CloseButton: styled(motion.button)`
 		padding: 10px 20px;
