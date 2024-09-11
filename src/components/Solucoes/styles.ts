@@ -11,7 +11,6 @@ export const S = {
 		align-items: center;
 		text-align: center;
 		padding: 5rem 0;
-		text-align: left;
 		@media (max-width: 768px) {
 			flex-direction: row;
 			justify-content: center;
@@ -22,8 +21,11 @@ export const S = {
 	Main: styled.div`
 		width: 100%;
 		padding: 0 ${theme.main.spacing.x.xl};
+		align-items: center;
+		justify-content: center;
 	`,
 	Content: styled.div`
+		text-align: left;
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
