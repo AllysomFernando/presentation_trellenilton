@@ -14,9 +14,9 @@ export const S = {
 		text-align: left;
 		@media (max-width: 768px) {
 			flex-direction: row;
-			justify-content: space-between;
+			justify-content: center;
 			padding-top: 5rem;
-			text-align: left;
+			text-align: center;
 		}
 	`,
 	Main: styled.div`
@@ -27,6 +27,12 @@ export const S = {
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
-		
+	`,
+	H1: styled.h1`
+		font-size: ${theme.main.font.size.xxl};
+		color: ${theme.main.colors.secondary};
+		@media (max-width: 768px) {
+			font-size: ${theme.main.font.size.xl};
+		}
 	`,
 };
