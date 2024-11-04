@@ -3,7 +3,7 @@ import { S } from "./styles";
 import { AnimatePresence } from "framer-motion";
 import { StaticImageData } from "next/image";
 
-type CardProps = {
+export type CardProps = {
 	id: number;
 	title: string;
 	subtitle: string;
