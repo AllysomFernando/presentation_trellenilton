@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { colors } from "@/styles/colors";
 import { theme } from "@/styles/theme";
-import { h1 } from "framer-motion/client";
 
 export const S = {
 	Container: styled.div`
