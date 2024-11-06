@@ -26,7 +26,7 @@ export default function CardPreco({
 				</S.ParagraphDescriptionPrice>
 			</S.PriceDiv>
 			<S.HR />
-			<S.PlanButton>Contratar</S.PlanButton>
+			<S.PlanButton isHighlighted={isHighlighted}>Contratar</S.PlanButton>
 		</S.Plan>
 	);
 }
