@@ -4,7 +4,6 @@ import { colors } from "@/styles/colors";
 export const S = {
 	Container: styled.div`
 		width: 100%;
-		background-color: ${({ theme }) => theme.main.colors.backgroundColor};
 	`,
 	Main: styled.div`
 		display: grid;
