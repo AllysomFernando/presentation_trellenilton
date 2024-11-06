@@ -1,7 +1,11 @@
+import { S } from "./styles";
+
 export default function Preco() {
 	return (
-		<div>
-			<h1>Preço</h1>
-		</div>
+		<S.Container>
+			<S.Main>
+				<h1>Preço</h1>
+			</S.Main>
+		</S.Container>
 	);
 }
