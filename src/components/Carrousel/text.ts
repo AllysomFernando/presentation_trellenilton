@@ -6,30 +6,30 @@ import ClientImage4 from "@/assets/images/Figma Image 428x498.png";
 export const Clients = [
 	{
 		id: 1,
-		title: "Cliente 1",
+		title: "Rian Gosling",
 		subtitle: "Satisfação garantida",
-		text: "Cliente 1 está muito satisfeito com nossos serviços.",
+		text: "Rian Gosling está muito satisfeito com nossos serviços.",
 		img: ClientImage1,
 	},
 	{
 		id: 2,
-		title: "Cliente 2",
+		title: "Shellon Musk",
 		subtitle: "Qualidade e eficiência",
-		text: "Cliente 2 destaca a qualidade e eficiência de nossos produtos.",
+		text: "Shellon Musk destaca a qualidade e eficiência de nossos produtos.",
 		img: ClientImage2,
 	},
 	{
 		id: 3,
-		title: "Cliente 3",
+		title: "Brendon Urie",
 		subtitle: "Inovação constante",
-		text: "Cliente 3 aprecia nossa constante inovação.",
+		text: "Brendon Urie aprecia nossa constante inovação.",
 		img: ClientImage3,
 	},
 	{
 		id: 4,
-		title: "Cliente 4",
+		title: "Xi Jinping",
 		subtitle: "Parceria de sucesso",
-		text: "Cliente 4 valoriza nossa parceria de sucesso.",
+		text: "Xi Jinping valoriza nossa parceria de sucesso.",
 		img: ClientImage4,
 	},
 ];
