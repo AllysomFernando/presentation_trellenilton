@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { colors } from "@/styles/colors";
 import { theme } from "@/styles/theme";
+import { h1 } from "framer-motion/client";
 
 export const S = {
 	Container: styled.div`
@@ -10,7 +11,7 @@ export const S = {
 		align-items: center;
 		text-align: center;
 		padding: 5rem 0;
-		background-color: ${colors.purple[400]};
+		background-color: ${theme.main.colors.secondary};
 		@media (max-width: 768px) {
 			flex-direction: row;
 			justify-content: center;
@@ -31,7 +32,11 @@ export const S = {
 		gap: 2rem;
 	`,
 	Paragraph: styled.p`
+		color: ${colors.white[900]};
 		padding-bottom: 3rem;
+	`,
+	H1: styled.h1`
+		color: ${colors.white[900]};
 	`,
 	H3: styled.h3`
 		color: ${colors.white[900]};
