@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { theme } from "@/styles/theme";
+import { colors } from "@/styles/colors";
 
 export const S = {
 	Container: styled.div`
@@ -15,7 +16,6 @@ export const S = {
 			padding-top: 5rem;
 			text-align: center;
 		}
-		
 	`,
 	Main: styled.div`
 		width: 100%;
@@ -29,7 +29,11 @@ export const S = {
 		flex-direction: column;
 		gap: 2rem;
 	`,
-    Paragraph: styled.p`
-        padding-bottom: 3rem;
-    `
+	Paragraph: styled.p`
+		padding-bottom: 3rem;
+	`,
+	H3: styled.h3`
+		font-weight: ${theme.main.font.weight.semiBold};
+		color: ${colors.purple[500]};
+	`,
 };
