@@ -36,4 +36,51 @@ export const S = {
 		font-weight: ${theme.main.font.weight.semiBold};
 		color: ${colors.purple[500]};
 	`,
+	PlanContainer: styled.div`
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		margin-top: 2rem;
+		@media (min-width: 768px) {
+			flex-direction: row;
+			justify-content: center;
+			gap: 2rem;
+		}
+	`,
+	Plan: styled.div`
+		background-color: ${colors.white[900]};
+		border-radius: 10px;
+		padding: 2rem;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		width: 100%;
+		max-width: 300px;
+	`,
+	PlanTitle: styled.h2`
+		font-size: ${theme.main.font.size.lg};
+		color: ${colors.purple[700]};
+		margin-bottom: 1rem;
+	`,
+	PlanDescription: styled.p`
+		font-size: ${theme.main.font.size.lg};
+		color: ${colors.black[900]};
+		margin-bottom: 1rem;
+	`,
+	PlanPrice: styled.h3`
+		font-size: ${theme.main.font.size.xl};
+		color: ${colors.purple[900]};
+		margin-bottom: 1rem;
+	`,
+	PlanButton: styled.button`
+		background-color: ${colors.purple[600]};
+		color: ${colors.white[900]};
+		border: none;
+		border-radius: 5px;
+		padding: 0.5rem 1rem;
+		cursor: pointer;
+		font-size: ${theme.main.font.size.lg};
+		&:hover {
+			background-color: ${colors.purple[700]};
+		}
+	`,
 };
