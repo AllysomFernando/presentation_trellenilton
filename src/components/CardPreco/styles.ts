@@ -48,8 +48,7 @@ export const S = {
 		}
 	`,
 	Plan: styled.div<{ isHighlighted?: boolean }>`
-		background-color: ${(props) =>
-			props.isHighlighted ? colors.purple[100] : colors.white[900]};
+		background-color: ${colors.white[800]};
 		border-radius: 10px;
 		padding: 2rem;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -69,10 +68,17 @@ export const S = {
 		color: ${colors.black[900]};
 		margin-bottom: 1rem;
 	`,
-	PlanPrice: styled.h3`
-		font-size: ${theme.main.font.size.xl};
+	PlanPrice: styled.h2`
+		font-size: ${theme.main.font.size.xxl};
 		color: ${colors.purple[900]};
 		margin-bottom: 1rem;
+        text-align: left;
+	`,
+	PriceDiv: styled.div`
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		gap: 1rem;
 	`,
 	PlanButton: styled.button`
 		background-color: ${colors.purple[600]};
@@ -85,5 +91,18 @@ export const S = {
 		&:hover {
 			background-color: ${colors.purple[700]};
 		}
+	`,
+    ParagraphDescriptionPrice: styled.p`
+        font-size: ${theme.main.font.size.sm};
+        color: ${colors.black[900]};
+        margin-bottom: 1rem;
+        text-align: left;
+		padding-top: 2rem;
+    `,
+	HR: styled.hr`
+		border: 0;
+		height: 1px;
+		background: ${colors.purple[500]};
+		margin: 2rem 2rem;
 	`,
 };
