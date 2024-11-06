@@ -7,7 +7,7 @@ export default function Cliente() {
 	return (
 		<S.Container>
 			<S.Main>
-				<h3>Conselho de quem conhece</h3>
+				<S.H3>Conselho de quem conhece</S.H3>
 				<h1>Cada cliente importa!</h1>
 				<S.Paragraph>
 					Problems trying to resolve the conflict between the two major realms
