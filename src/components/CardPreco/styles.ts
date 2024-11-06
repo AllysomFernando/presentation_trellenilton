@@ -58,9 +58,11 @@ export const S = {
 		border: ${(props) =>
 			props.isHighlighted ? `2px solid ${colors.purple[500]}` : "none"};
 	`,
-	PlanTitle: styled.h2`
-		font-size: ${theme.main.font.size.lg};
-		color: ${colors.purple[700]};
+	PlanTitle: styled.h2<{ isHighlighted?: boolean }>`
+		font-size: ${(props) =>
+			props.isHighlighted ? theme.main.font.size.xxl : theme.main.font.size.lg};
+		color: ${(props) =>
+			props.isHighlighted ? theme.main.colors.secondary : colors.purple[700]};
 		margin-bottom: 1rem;
 	`,
 	PlanDescription: styled.p`
