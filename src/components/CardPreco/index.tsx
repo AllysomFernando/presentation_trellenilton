@@ -17,7 +17,7 @@ export default function CardPreco({
 }: CardPrecoProps) {
 	return (
 		<S.Plan isHighlighted={isHighlighted}>
-			<S.PlanTitle>{title}</S.PlanTitle>
+			<S.PlanTitle isHighlighted={isHighlighted}>{title}</S.PlanTitle>
 			<S.PlanDescription>{description}</S.PlanDescription>
 			<S.PriceDiv>
 				<S.PlanPrice>{price}</S.PlanPrice>
