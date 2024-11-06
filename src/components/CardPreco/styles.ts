@@ -72,7 +72,7 @@ export const S = {
 		font-size: ${theme.main.font.size.xxl};
 		color: ${colors.purple[900]};
 		margin-bottom: 1rem;
-        text-align: left;
+		text-align: left;
 	`,
 	PriceDiv: styled.div`
 		display: flex;
@@ -80,10 +80,13 @@ export const S = {
 		align-items: center;
 		gap: 1rem;
 	`,
-	PlanButton: styled.button`
-		background-color: ${colors.purple[600]};
-		color: ${colors.white[900]};
-		border: none;
+	PlanButton: styled.button<{ isHighlighted?: boolean }>`
+		background-color: ${(props) =>
+			props.isHighlighted ? theme.main.colors.secondary : colors.white[800]};
+		color: ${(props) =>
+			props.isHighlighted ? colors.white[800] : colors.purple[700]};
+		border: ${(props) =>
+			props.isHighlighted ? "none" : `2px solid ${colors.purple[700]}`};
 		border-radius: 5px;
 		padding: 0.5rem 1rem;
 		cursor: pointer;
@@ -92,13 +95,13 @@ export const S = {
 			background-color: ${colors.purple[700]};
 		}
 	`,
-    ParagraphDescriptionPrice: styled.p`
-        font-size: ${theme.main.font.size.sm};
-        color: ${colors.black[900]};
-        margin-bottom: 1rem;
-        text-align: left;
+	ParagraphDescriptionPrice: styled.p`
+		font-size: ${theme.main.font.size.sm};
+		color: ${colors.black[900]};
+		margin-bottom: 1rem;
+		text-align: left;
 		padding-top: 2rem;
-    `,
+	`,
 	HR: styled.hr`
 		border: 0;
 		height: 1px;
