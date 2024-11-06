@@ -10,7 +10,7 @@ export const S = {
 		gap: 15rem;
 		align-items: center;
 		text-align: center;
-		padding: 5rem 0;
+		padding: 12rem 0;
 		background-color: ${theme.main.colors.secondary};
 		@media (max-width: 768px) {
 			flex-direction: row;
@@ -33,7 +33,6 @@ export const S = {
 	`,
 	Paragraph: styled.p`
 		color: ${colors.white[900]};
-		padding-bottom: 3rem;
 	`,
 	H1: styled.h1`
 		color: ${colors.white[900]};
@@ -41,5 +40,10 @@ export const S = {
 	H3: styled.h3`
 		color: ${colors.white[900]};
 		font-weight: ${theme.main.font.weight.semiBold};
+	`,
+	Text: styled.div`
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 5rem;
 	`,
 };
