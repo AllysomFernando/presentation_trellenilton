@@ -14,19 +14,21 @@ export default function Preco() {
 					<CardPreco
 						title="Básico"
 						description="Plano básico para quem está começando"
-						price="R$ 50,00"
+						price="Grátis"
 						isHighlighted={highlightedPlan === "Básico"}
 					/>
 					<CardPreco
 						title="Premium"
 						description="Plano premium para quem quer mais resultados"
 						price="R$ 100,00"
+						precoDescricao="/por mês"
 						isHighlighted={highlightedPlan === "Premium"}
 					/>
 					<CardPreco
 						title="Empresarial"
 						description="Plano empresarial para quem quer destacar a sua empresa"
 						price="R$ 200,00"
+						precoDescricao="/por dev"
 						isHighlighted={highlightedPlan === "Empresarial"}
 					/>
 				</S.PlanContainer>
