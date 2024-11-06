@@ -4,7 +4,7 @@ export default function Preco() {
 	return (
 		<S.Container>
 			<S.Main>
-				<h3>Planos e preços</h3>
+				<S.H3>Planos e preços</S.H3>
 				<h1>Nossos planos</h1>
 			</S.Main>
 		</S.Container>
