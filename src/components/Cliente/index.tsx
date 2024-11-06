@@ -8,7 +8,7 @@ export default function Cliente() {
 		<S.Container>
 			<S.Main>
 				<S.H3>Conselho de quem conhece</S.H3>
-				<h1>Cada cliente importa!</h1>
+				<S.H1>Cada cliente importa!</S.H1>
 				<S.Paragraph>
 					Problems trying to resolve the conflict between the two major realms
 					of Classical physics: Newtonian mechanics{" "}
