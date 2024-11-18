@@ -17,11 +17,18 @@ export default function HomeTemplate() {
 			<S.Main>
 				<Header />
 				<Banner />
-				<Section />
-				<Solucoes />
-				<Cliente />
-				<Preco />
-				<Contato />
+				<section id="solution">
+					<Solucoes />
+				</section>
+				<section id="testimonials">
+					<Cliente />
+				</section>
+				<section id="pricing">
+					<Preco />
+				</section>
+				<section id="contact">
+					<Contato />
+				</section>
 				<Footer />
 			</S.Main>
 		</S.Container>
