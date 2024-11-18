@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import {
 	ContactContainer,
-	ContactTitle,
 	ContactSubtitle,
 	ContactForm,
 	ContactInput,
-	ContactButton,
 } from "./styles";
 import { Button } from "../Button";
 import { sendEmail } from "@/axios";
