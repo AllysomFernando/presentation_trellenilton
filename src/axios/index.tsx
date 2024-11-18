@@ -1,45 +1,26 @@
-import axios, { AxiosInstance } from "axios";
-
-const API_URL =
-	"https://us-central1-plucky-cascade-440013-j0.cloudfunctions.net/";
 const TOKEN =
-	"eyJhbGciOiJSUzI1NiIsImtpZCI6IjFkYzBmMTcyZThkNmVmMzgyZDZkM2EyMzFmNmMxOTdkZDY4Y2U1ZWYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA1ODQwMzAwOTI3MjY2MTIxMzk3IiwiZW1haWwiOiJhbGx5c29tLnJlbmN6ZW5jemVuMThAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJmT1hpSUZ3VGhtb3J3SlZ6cWRQQ3pnIiwibmJmIjoxNzMxOTM3MjcwLCJpYXQiOjE3MzE5Mzc1NzAsImV4cCI6MTczMTk0MTE3MCwianRpIjoiYzliZDIyZWVkNWJmMTYwMmYyNGU1ZDMzNmE4NTcxYzljNTZhM2FlMyJ9.RemsNq72Wau6968nSfQ7fIYd-N1IQoZ8_Iu7nafwAecLoeq3-tOCVWLygD_qydP2Os6fdVJI101FlbADSNmndiDz-mdujuA-ZR2IpoarVWJfN4a2GTmn6UUaeq_sE1Krwda7n9RGvpwAbbsNoVpRTkEGdgCiOD87nVgLTVrObVy3Ms_NqbXYrxFd_iNz-tIRqgLZ5VM3wV8auzKwAF6EurwsYaCfV717w1bqMd1o9pcfd8uABEPuUJUySk7V9wbOLFNLC37qwq5B6Ixm4AMczAbnYaab7ntSIbnvlRYEk0vLCb6LLyzE_cjpjTl_34NeMnZlFrHc6VJFmqHMIlkdlg";
+	"eyJhbGciOiJSUzI1NiIsImtpZCI6IjFkYzBmMTcyZThkNmVmMzgyZDZkM2EyMzFmNmMxOTdkZDY4Y2U1ZWYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA1ODQwMzAwOTI3MjY2MTIxMzk3IiwiZW1haWwiOiJhbGx5c29tLnJlbmN6ZW5jemVuMThAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJIb3F4Tnp5aFNvelotbU9vakVLV0lnIiwibmJmIjoxNzMxOTQ4Mjc4LCJpYXQiOjE3MzE5NDg1NzgsImV4cCI6MTczMTk1MjE3OCwianRpIjoiMWUwYzBhZmMxNjU1N2Q2ZTMzZDg0NTMzNjAzMzc2NWMxODZjODQwYiJ9.yHWhPYnsvfyG-St28tlFgcjL_KtFrYDcxW73LOGRHN1i7hnui7HguwMs4vGrtquJ_K47Y7iEeeY1-lbGSXR0CDGUy0lEOXLjeFL-x-Y1rBOkETRKC6FaoVxqNYUwcxoE5ZH4cvsBAA3hJ3_hWZ5xrbvwFhV1hq65uEj_KrxN_GJi9a2EkR-yA5fz0XN6mrFldI_hF0Xe3YBAuAoBt_9gu5STlzCZUGGLtHmGBVdsCiZ8zpTYXe96yTDiQyG1mb-qC8x04siAz4cDJ9feYO60nZISQuALBZyGLOpdAH5ziBtMGNVEuUjXiXZF-dZa_6XaWllsRurA-ceiGdhvWxU1aw";
 
-const api: AxiosInstance = axios.create({
-	baseURL: API_URL,
-	headers: {
-		"Content-Type": "application/json",
-		"Access-Control-Allow-Origin": "*",
-		"Access-Control-Allow-Methods": "*",
-		"Access-Control-Allow-Headers": "*",
-		Authorization: `Bearer ${TOKEN}`,
-	},
-});
-
-api.interceptors.response.use(
-	(response) => response,
-	(error) => {
-		console.error("Erro na requisição:", error.response?.data);
-		return Promise.reject(error);
-	}
-);
-
-interface EmailRequest {
+export const sendEmail = async (emailRequest: {
 	toMail: string;
 	content: string;
-}
+}) => {
+	const url = "/api/function-1";
 
-export const sendEmail = async (
-	emailRequest: EmailRequest
-): Promise<Response> => {
-	try {
-		const response = await api.post("/function-1", emailRequest);
-		return response.data;
-	} catch (error: any) {
-		console.error(
-			"Erro no envio de e-mail:",
-			error.response ? error.response.data : error.message
-		);
-		throw error;
+	const response = await fetch(url, {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+			Authorization: `Bearer ${TOKEN}`,
+		},
+		body: JSON.stringify(emailRequest),
+	});
+
+	if (!response.ok) {
+		const errorData = await response.json();
+		console.error("Erro no envio de e-mail:", errorData);
+		throw new Error(errorData.message || "Erro desconhecido");
 	}
+
+	return await response.json();
 };
