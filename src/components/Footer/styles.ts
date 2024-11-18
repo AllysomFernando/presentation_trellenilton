@@ -5,21 +5,23 @@ export const FooterContainer = styled.footer`
 	padding: 2rem 0;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	height: 400px;
 
 	@media (max-width: 768px) {
 		padding: 1rem 0;
+		height: auto;
 	}
 `;
 
 export const FooterMain = styled.div`
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	width: 100%;
-	max-width: 800px;
 	height: 100%;
+	
 	@media (max-width: 768px) {
-		justify-content: center;
 		gap: 2rem;
 		flex-wrap: wrap;
 	}
@@ -40,21 +42,20 @@ export const FooterSection = styled.div`
 	align-items: center;
 	margin: 2rem;
 	height: 50%;
+	width: 100%; // Adicionado para garantir que os elementos ocupem a largura total
 	@media (max-width: 768px) {
 		margin: 1rem;
-		width: 100%;
 		max-width: 300px;
 		height: auto;
 		text-align: center;
 	}
 
 	&:first-child {
-		align-items: flex-start;
+		align-items: center; // Alterado para centralizar o primeiro filho também
 		gap: 3rem;
 		height: 38%;
 		@media (max-width: 768px) {
 			height: auto;
-			align-items: center;
 		}
 	}
 `;
