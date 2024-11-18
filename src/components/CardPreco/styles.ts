@@ -63,7 +63,6 @@ export const S = {
 			props.isHighlighted ? theme.main.font.size.xxl : theme.main.font.size.lg};
 		color: ${(props) =>
 			props.isHighlighted ? theme.main.colors.secondary : colors.purple[700]};
-
 	`,
 	PlanDescription: styled.p`
 		font-size: ${theme.main.font.size.lg};
@@ -94,7 +93,8 @@ export const S = {
 		cursor: pointer;
 		font-size: ${theme.main.font.size.lg};
 		&:hover {
-			background-color: ${colors.purple[700]};	
+			background-color: ${colors.purple[700]};
+			color: ${colors.white[800]};
 		}
 	`,
 	ParagraphDescriptionPrice: styled.p`
