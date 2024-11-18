@@ -8,13 +8,17 @@ import {
 	ContactButton,
 } from "./styles";
 import { Button } from "../Button";
+import { sendEmail } from "@/axios";
 
 export default function Contato() {
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
 
 	function handleSendEmail() {
-		console.log(email, message);
+		sendEmail({ toMail: email, content: message });
+		alert("Email enviado com sucesso!");
+		setEmail("");
+		setMessage("");
 	}
 	return (
 		<ContactContainer>
