@@ -5,7 +5,7 @@ export const FooterContainer = styled.footer`
 	padding: 2rem 0;
 	display: flex;
 	justify-content: center;
-	min-height: 400px;
+	height: 400px;
 
 	@media (max-width: 768px) {
 		padding: 1rem 0;
@@ -14,16 +14,14 @@ export const FooterContainer = styled.footer`
 
 export const FooterMain = styled.div`
 	display: flex;
-	align-items: flex-start;
-	flex-wrap: wrap;
+	align-items: center;
 	width: 100%;
 	max-width: 800px;
-	margin: 0 auto;
-	padding: 0 1rem;
-
+	height: 100%;
 	@media (max-width: 768px) {
 		justify-content: center;
 		gap: 2rem;
+		flex-wrap: wrap;
 	}
 `;
 
@@ -41,7 +39,7 @@ export const FooterSection = styled.div`
 	flex-direction: column;
 	align-items: center;
 	margin: 2rem;
-
+	height: 50%;
 	@media (max-width: 768px) {
 		margin: 1rem;
 		width: 100%;
@@ -53,8 +51,9 @@ export const FooterSection = styled.div`
 	&:first-child {
 		align-items: flex-start;
 		gap: 3rem;
-
+		height: 38%;
 		@media (max-width: 768px) {
+			height: auto;
 			align-items: center;
 		}
 	}
