@@ -9,6 +9,7 @@ import { Solucoes } from "@/components/Solucoes";
 import Cliente from "@/components/Cliente";
 import Preco from "@/components/Preco";
 import Footer from "@/components/Footer";
+import Contato from "@/components/Contato";
 
 export default function HomeTemplate() {
 	return (
@@ -20,6 +21,7 @@ export default function HomeTemplate() {
 				<Solucoes />
 				<Cliente />
 				<Preco />
+				<Contato />
 				<Footer />
 			</S.Main>
 		</S.Container>
