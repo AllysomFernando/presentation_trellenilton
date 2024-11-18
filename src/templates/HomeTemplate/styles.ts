@@ -11,7 +11,7 @@ export const S = {
 	`,
 	Main: styled.div`
 		width: 100%;
-		padding: 0 ${theme.main.spacing.x.xl};
+		padding: 0 0;
 		align-items: center;
 		justify-content: center;
 	`,
